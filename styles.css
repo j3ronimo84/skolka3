@@ -23,3 +23,12 @@ body {
   padding: 5px;
   background: green; 
 }
+
+.martinkolecko {
+	width: 100px;
+	height: 100px;
+	border-radius: 100px;
+	background: red;
+	margin: 20px;
+	padding: 10px;
+}
