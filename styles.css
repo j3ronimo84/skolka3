@@ -1,6 +1,7 @@
 body {
 	background: yellow;
 }
+
 .honza{
 	width: 100px;
 	height: 100px;
@@ -8,3 +9,14 @@ body {
 	padding: 10px;
 	background: cyan;
 }
+
+
+.tonda {
+  background-color: red;
+  color: white;
+  font-size: 120%;
+  padding: 10px;
+  height: 100px;
+  width: 100px;
+}
+
