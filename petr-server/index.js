@@ -13,12 +13,13 @@ app.get('/', function (req, res, next) {
 });
 
 app.post('/', function (req, res) {
-	var numbers;	
 	parser(req.body, req.files.file, function(err, numbers){
-		if (err) return console.error(err);
-		this.numbers = numbers;
-		console.log(numbers);
-		res.render('index', {message: numbers});
+		if (err) {
+			res.render('index');
+			return console.error(err);
+		}
+		console.log("Numbers: "+numbers);
+		res.render('index', {numbers: JSON.stringify(numbers)});
 	});
 	
 });
