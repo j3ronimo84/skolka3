@@ -1,0 +1,9 @@
+extends ./layout.jade
+
+block content
+	h1 Petr Ukol
+	form(name="form", action="/", method="post", enctype="multipart/form-data")
+		textarea(name="text")
+		input(type="file", name="file")
+		input(type="submit", value="Submit")
+	p=message
