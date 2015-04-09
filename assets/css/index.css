@@ -1,0 +1,53 @@
+body {
+  background-color: #DDD;
+}
+
+.redtext {
+  color: red;
+}
+
+svg.chart {
+  background: black;
+}
+
+svg.chart .grid {
+  stroke: white;
+  stroke-dasharray: 1 2;
+  stroke-width: 1;
+}
+
+svg.chart .points {
+  stroke: white;
+  stroke-width: 3;
+}
+svg.chart .first_set {
+  fill: #00554d;
+}
+svg.chart .points text {
+  font-family: Arial;
+  font-size: 14px;
+  stroke-width: 1;
+}
+
+svg.chart .surfaces {
+  fill-opacity: 0.5;
+}
+
+svg.chart .grid.double {
+  stroke-opacity: 0.4;
+}
+
+svg.chart .labels {
+  font-family: Arial;
+  font-size: 14px;
+  fill: white;
+  kerning: 1;
+}
+
+svg.chart .labels.x-labels {
+  text-anchor: middle;
+}
+
+svg.chart .labels.y-labels {
+  text-anchor: end;
+}

@@ -1,5 +1,15 @@
 extends ./layout.jade
 
 block content
-	h1 Hello World
-	p= message
+  - if (typeof(err) !== 'undefined'){
+    p.redtext=err
+  -}
+  form(action="./", method="post", enctype="multipart/form-data")
+    div.input
+      span.label Soubor
+      input(type="file", name="file")
+    div.input
+      span.label Data
+      textarea(name="data", cols="80", rows="15")
+    div.actions
+      input(type="submit", value="Odeslat")

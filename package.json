@@ -1,21 +1,29 @@
 {
-  "name": "tonda-ukol",
+  "name": "neumann_ukol",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "private": true,
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
-  },
-  "author": "antonin.neumann@socialbakers.com",
-  "license": "BSD",
   "dependencies": {
     "express": "^4.12.3",
     "jade": "^1.9.2",
     "multer": "^0.1.8"
   },
   "devDependencies": {
-    "debug": "^2.1.3"
-  }
+    "debug": "^2.1.3",
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/j3ronimo84/skolka3.git"
+  },
+  "author": "antonin.neumann@socialbakers.com",
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/j3ronimo84/skolka3/issues"
+  },
+  "homepage": "https://github.com/j3ronimo84/skolka3"
 }
