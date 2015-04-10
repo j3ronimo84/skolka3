@@ -5,7 +5,7 @@ html(lang="en")
   body
     - len = length/100
 
-    svg(version="1.1" baseProfile="full" width="650" height="650" xmlns="http://www.w3.org/2000/svg")
+    svg(version="1.1" baseProfile="full" width=numbers.length*20+100 height="550" xmlns="http://www.w3.org/2000/svg")
         defs
                 marker(id="Arrow" 
                         markerWidth="5" markerHeight="5" viewBox="-6 -6 12 12" 
@@ -18,8 +18,8 @@ html(lang="en")
         - for (var i = 20; i < 480; i = i + 20)
             line(x1="15" y1=500-i x2="25" y2=500-i stroke="black" stroke-width="2")
         
-        line(x1="20" y1="500" x2="500" y2="500" stroke="black" stroke-width="2" marker-end="url(#Arrow)")
-        - for (var i = 20; i < 480; i = i + 20)
+        line(x1="20" y1="500" x2=(numbers.length+2)*20 y2="500" stroke="black" stroke-width="2" marker-end="url(#Arrow)")
+        - for (var i = 20; i < (numbers.length+1)*20; i = i + 20)
             line(x1=20+i y1="495" x2=20+i y2="505" stroke="black" stroke-width="2")
                     
         each val, i in numbers
