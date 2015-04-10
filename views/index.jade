@@ -1,0 +1,12 @@
+doctype html
+html(lang="en")
+  head
+    title= pageTitle
+  body
+    form(action="graph", method="post", enctype="multipart/form-data")
+      textarea(name="text")
+      br
+      input(type="file" name="textFile")
+      br
+      input(type="submit")
+

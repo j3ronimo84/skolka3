@@ -1,0 +1,17 @@
+{
+  "name": "Graph",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "martin.blaha@socialbakers.com",
+  "license": "BSD",
+  "dependencies": {
+    "express": "^4.12.3",
+    "jade": "^1.9.2",
+    "multer": "^0.1.8"
+  }
+}
